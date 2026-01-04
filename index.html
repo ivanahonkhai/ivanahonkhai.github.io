@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Developer | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --card-bg: #111;
+            --accent-python: #3776ab;
+            --accent-web: #e44d26;
+            --accent-scratch: #f5c400;
+            --text: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; }
+
+        header { text-align: center; margin-bottom: 50px; }
+        header h1 { font-size: 3rem; margin-bottom: 10px; background: linear-gradient(to right, #fff, #666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #222;
+            padding: 25px;
+            border-radius: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-10px); border-color: #444; }
+
+        .card h3 { margin-top: 0; font-size: 1.5rem; }
+        
+        /* Color Coding for Disciplines */
+        .web { border-top: 5px solid var(--accent-web); }
+        .python { border-top: 5px solid var(--accent-python); }
+        .scratch { border-top: 5px solid var(--accent-scratch); }
+
+        .tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 5px;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .footer { text-align: center; margin-top: 60px; color: #555; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Ivan Ahonkhai</h1>
+        <p>Future Engineer • Tech Enthusiast • Problem Solver</p>
+    </header>
+
+    <div class="grid">
+        <div class="card web">
+            <span class="tag">Web Development</span>
+            <h3>Building the Web</h3>
+            <p>Creating responsive websites using HTML, CSS, and modern design principles.</p>
+        </div>
+
+        <div class="card python">
+            <span class="tag">Python</span>
+            <h3>Data & Logic</h3>
+            <p>Writing clean Python scripts for automation, math problems, and simple games.</p>
+        </div>
+
+        <div class="card scratch">
+            <span class="tag">Scratch</span>
+            <h3>Creative Coding</h3>
+            <p>Designing interactive stories and complex game mechanics using block-based logic.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Guided by Techbase Consultant Services</p>
+    </div>
+</div>
+
+</body>
+</html>
