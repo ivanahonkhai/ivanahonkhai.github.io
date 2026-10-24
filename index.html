@@ -1,102 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junior Developer | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #050505;
-            --card-bg: #111;
-            --accent-python: #3776ab;
-            --accent-web: #e44d26;
-            --accent-scratch: #f5c400;
-            --text: #ffffff;
-        }
-
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: 'Outfit', sans-serif;
-            margin: 0;
-            padding: 40px 20px;
-            line-height: 1.6;
-        }
-
-        .container { max-width: 900px; margin: 0 auto; }
-
-        header { text-align: center; margin-bottom: 50px; }
-        header h1 { font-size: 3rem; margin-bottom: 10px; background: linear-gradient(to right, #fff, #666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid #222;
-            padding: 25px;
-            border-radius: 20px;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .card:hover { transform: translateY(-10px); border-color: #444; }
-
-        .card h3 { margin-top: 0; font-size: 1.5rem; }
-        
-        /* Color Coding for Disciplines */
-        .web { border-top: 5px solid var(--accent-web); }
-        .python { border-top: 5px solid var(--accent-python); }
-        .scratch { border-top: 5px solid var(--accent-scratch); }
-
-        .tag {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: bold;
-            padding: 4px 10px;
-            border-radius: 5px;
-            background: rgba(255,255,255,0.1);
-        }
-
-        .footer { text-align: center; margin-top: 60px; color: #555; font-size: 0.9rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ivan Ahonkhai | Junior Developer Portfolio</title>
+<meta name="description" content="Ivan Ahonkhai is a junior developer building web apps, Python projects and AI-powered tools. Browse live projects and source code.">
+<link rel="canonical" href="https://ivanahonkhai.github.io/">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#4f46e5">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ivan Ahonkhai | Junior Developer Portfolio">
+<meta property="og:description" content="Web apps, Python projects and AI-powered tools by Ivan Ahonkhai.">
+<meta property="og:url" content="https://ivanahonkhai.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ivan Ahonkhai","url":"https://ivanahonkhai.github.io/","sameAs":["https://github.com/ivanahonkhai"],"jobTitle":"Junior Developer"}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<div class="container">
-    <header>
-        <h1>Ivan Ahonkhai</h1>
-        <p>Future Engineer • Tech Enthusiast • Problem Solver</p>
-    </header>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Ivan Ahonkhai, back to top">Ivan Ahonkhai</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode">
+        <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
 
+<main id="main">
+  <div id="top" class="wrap hero">
+    <p class="eyebrow reveal">Future Engineer</p>
+    <h1 class="reveal">Ivan Ahonkhai</h1>
+    <p class="lead reveal">Tech enthusiast and problem solver, building web apps, Python programs and AI-powered tools.</p>
+    <div class="cta reveal">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="https://github.com/ivanahonkhai" rel="noopener noreferrer">GitHub profile</a>
+    </div>
+  </div>
+
+  <section id="projects" class="wrap" aria-labelledby="projects-h">
+    <h2 id="projects-h" class="reveal">Projects</h2>
+    <p class="sub reveal">Things I have built while learning. Each links to its source code, and to a live version where one exists.</p>
     <div class="grid">
-        <div class="card web">
-            <span class="tag">Web Development</span>
-            <h3>Building the Web</h3>
-            <p>Creating responsive websites using HTML, CSS, and modern design principles.</p>
-        </div>
-
-        <div class="card python">
-            <span class="tag">Python</span>
-            <h3>Data & Logic</h3>
-            <p>Writing clean Python scripts for automation, math problems, and simple games.</p>
-        </div>
-
-        <div class="card scratch">
-            <span class="tag">Scratch</span>
-            <h3>Creative Coding</h3>
-            <p>Designing interactive stories and complex game mechanics using block-based logic.</p>
-        </div>
+      <article class="card feature reveal">
+        <span class="tag">AI &middot; Music</span>
+        <h3>MuseScore AI</h3>
+        <p>An interactive music composition tool with a visual staff editor, synthesizer playback, and AI-powered melody suggestions using Gemini.</p>
+        <div class="links"><a href="https://muse-score-ai.vercel.app" rel="noopener noreferrer">Live site</a><a href="https://github.com/ivanahonkhai/MuseScore-AI" rel="noopener noreferrer">Source</a></div>
+      </article>
+      <article class="card feature reveal">
+        <span class="tag">AI &middot; Vision</span>
+        <h3>VisionGuide AI</h3>
+        <p>An assistant that identifies objects from photos and gives detailed written and spoken step-by-step usage instructions using Gemini AI.</p>
+        <div class="links"><a href="https://visionguide-ivory.vercel.app" rel="noopener noreferrer">Live site</a><a href="https://github.com/ivanahonkhai/visionguide" rel="noopener noreferrer">Source</a></div>
+      </article>
+      <article class="card reveal">
+        <span class="tag">Education</span>
+        <h3>ClassPulse Lite</h3>
+        <p>A simple classroom feedback viewer for students and teachers.</p>
+        <div class="links"><a href="https://ivanahonkhai.github.io/classpulse-lite/" rel="noopener noreferrer">Live site</a><a href="https://github.com/ivanahonkhai/classpulse-lite" rel="noopener noreferrer">Source</a></div>
+      </article>
+      <article class="card reveal">
+        <span class="tag">Productivity</span>
+        <h3>Chronos Timetable</h3>
+        <p>A clean, efficient activity scheduler and timetable manager.</p>
+        <div class="links"><a href="https://chronos-timetable.vercel.app" rel="noopener noreferrer">Live site</a><a href="https://github.com/ivanahonkhai/Chronos-Timetable" rel="noopener noreferrer">Source</a></div>
+      </article>
+      <article class="card reveal">
+        <span class="tag">Game</span>
+        <h3>Ping Pong</h3>
+        <p>Choose one or two players, follow the on-screen instructions to move your paddle, and win the match.</p>
+        <div class="links"><a href="https://pingpong-two-steel.vercel.app" rel="noopener noreferrer">Play</a><a href="https://github.com/ivanahonkhai/pingpong" rel="noopener noreferrer">Source</a></div>
+      </article>
+      <article class="card reveal">
+        <span class="tag">Education &middot; AI</span>
+        <h3>Questly</h3>
+        <p>A Socratic app that teaches students on various topics.</p>
+        <div class="links"><a href="https://github.com/ivanahonkhai/questly" rel="noopener noreferrer">Source</a></div>
+      </article>
+      <article class="card reveal">
+        <span class="tag">Education</span>
+        <h3>Socrates Tutoring</h3>
+        <p>An app for tutoring.</p>
+        <div class="links"><a href="https://github.com/ivanahonkhai/socratestutoring" rel="noopener noreferrer">Source</a></div>
+      </article>
+      <article class="card reveal">
+        <span class="tag">App</span>
+        <h3>Questy</h3>
+        <p>An early-stage project. Description coming soon.</p>
+        <div class="links"><a href="https://github.com/ivanahonkhai/Questy" rel="noopener noreferrer">Source</a></div>
+      </article>
     </div>
+  </section>
 
-    <div class="footer">
-        <p>Guided by Techbase Consultant Services</p>
+  <section id="skills" class="wrap" aria-labelledby="skills-h">
+    <h2 id="skills-h" class="reveal">What I work with</h2>
+    <p class="sub reveal">Three tracks I keep building in.</p>
+    <div class="grid">
+      <article class="card reveal"><span class="tag">Web Development</span><h3>Building the Web</h3><p>Creating responsive websites using HTML, CSS, and modern design principles.</p></article>
+      <article class="card reveal"><span class="tag">Python</span><h3>Data &amp; Logic</h3><p>Writing clean Python scripts for automation, math problems, and simple games.</p></article>
+      <article class="card reveal"><span class="tag">Scratch</span><h3>Creative Coding</h3><p>Designing interactive stories and complex game mechanics using block-based logic.</p></article>
     </div>
-</div>
+  </section>
+</main>
 
+<footer class="site-footer">
+  <div class="wrap bar">
+    <p>&copy; <span id="year">2026</span> Ivan Ahonkhai. Guided by Techbase Consultant Services.</p>
+    <a href="https://github.com/ivanahonkhai" rel="noopener noreferrer">github.com/ivanahonkhai</a>
+  </div>
+</footer>
+<script src="/assets/app.js" defer></script>
 </body>
 </html>
